@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Black background */
+    color: #f5f5f5; /* Blue text */
+}
+
+h1 {
+    color: #1E90FF;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #e1175e;
+    text-align: center;
+    margin-top: 15px;
+}
+
+h2 {
+    color: #c1889c;
+    text-align: center;
+    margin-top: 12px;
+}
+
+h3 {
+    color: #daebaf;
+    
+}
+
+strong {
+    color: #cd7090;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111; /* Darker background for container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Subtle box shadow */
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #222; /* Slightly lighter background for profile section */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.5); /* Blue glow */
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image img {
+    border-radius: 50%;
+    border: 2px solid #120747;
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #444; /* Dark horizontal line */
+    margin: 30px 0;
+}
+
+/* Navigation Arrows */
+a.arrow {
+    text-decoration: none;
+    color: #8c1313;
+    font-size: 30px;
+    position: fixed;
+    top: 50%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+}
+
+a.arrow.left {
+    left: 20px;
+}
+
+a.arrow.right {
+    right: 20px;
+}
+
+a.arrow:hover {
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+
+    a.arrow {
+        font-size: 25px;
+    }
+}
